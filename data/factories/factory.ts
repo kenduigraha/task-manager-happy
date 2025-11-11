@@ -2,10 +2,10 @@
 import { AuthUseCase } from "../../domain/usecases/auth-usecase"
 import { TaskUseCase } from "../../domain/usecases/task-usecase"
 import { BackendlessAuthRepository } from "../repositories/backendless-auth-repository"
-import { TaskRepository } from "../repositories/task-repository"
+import { BackendlessTaskRepository } from "../repositories/backendless-task-repository"
 
 let authRepository: BackendlessAuthRepository
-let taskRepository: TaskRepository
+let taskRepository: BackendlessTaskRepository
 let authUseCase: AuthUseCase
 let taskUseCase: TaskUseCase
 
@@ -17,9 +17,9 @@ export function getAuthRepository(): BackendlessAuthRepository {
   return authRepository
 }
 
-export function getTaskRepository(): TaskRepository {
+export function getTaskRepository(): BackendlessTaskRepository {
   if (!taskRepository) {
-    taskRepository = new TaskRepository()
+    taskRepository = new BackendlessTaskRepository()
   }
   return taskRepository
 }
