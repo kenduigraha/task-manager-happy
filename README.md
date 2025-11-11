@@ -81,3 +81,6 @@ Update task list in UI
 - **Testing:** Jest, React Testing Library
 - **Data:** use external API backendless.com
 - **Architecture Pattern:** Clean Architecture with Dependency Injection
+
+## Live Demo Link
+[DEMO](https://task-manager-happy.vercel.app/)
